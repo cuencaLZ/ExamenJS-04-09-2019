@@ -7,8 +7,8 @@ Tasca.prototype = {
     nombre: function() {
         return this.tasca.nombre;
     },
-    execucio: function() {
-        return this.tasca.execucio;
+    execucio: function(persona) {
+        return this.tasca.execucio(persona);
     },
 };
 
