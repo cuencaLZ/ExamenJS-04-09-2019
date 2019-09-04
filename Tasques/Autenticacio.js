@@ -4,8 +4,12 @@ function Autenticacio(){
 
 Autenticacio.prototype = {
     constructor: Autenticacio,
-    autenticacio: true,
     nombre:"Autoritzacio",
+    execucio: function(persona){
+        console.log (
+            this.nombre + " OK para"+ persona
+            );
+    },
 };
 
 module.exports = {

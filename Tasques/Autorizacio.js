@@ -4,10 +4,14 @@ function Autoritzacio(){
 
 Autoritzacio.prototype = {
     constructor: Autoritzacio,
-    autoritzacio: true,
     nombre: "Autoritzacio",
+    execucio: function(persona){
+        console.log (
+            this.nombre + " OK para"+ persona
+            );
+    },
 };
 
 module.exports = {
-    autoritzacio
+    Autoritzacio
 };
