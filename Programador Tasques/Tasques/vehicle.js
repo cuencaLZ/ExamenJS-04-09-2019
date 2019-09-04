@@ -9,7 +9,7 @@ Vehicle.prototype = {
     tipo: "Target",
     execucio: function(persona){
         console.log (
-            "Puerta abierta "+ persona
+            "Puerta abierta "+ persona +"!"
             );
     }
 };
