@@ -1,8 +1,8 @@
 //Ulizamos una modulación del proyecto
-const AutenticacioModule = require('./Programador Tasques/Tasques/Autenticacio')
-const AutoritzacioModule = require('./Programador Tasques/Tasques/Autorizacio')
-const TasquesModule = require('./Programador Tasques/Tasques')
-const vehicleModule = require('./Programador Tasques/Tasques/vehicle')
+const AutenticacioModule = require('./Programador Tasques/Tasques/Filtre/Autenticacio')
+const AutoritzacioModule = require('./Programador Tasques/Tasques/Filtre/Autorizacio')
+const TasquesModule = require('./Programador Tasques/Tasques/Tasques')
+const vehicleModule = require('./Programador Tasques/Tasques/Target/vehicle')
 const ProgramadorTasModule = require('./Programador Tasques/ProgramadorTasques')
 const MollappModule = require('./Mollapp')
 
