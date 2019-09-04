@@ -3,8 +3,8 @@ const AutoritzacioModule = require('./Programador Tasques/Tasques/Autorizacio')
 const TasquesModule = require('./Programador Tasques/Tasques')
 const vehicleModule = require('./Programador Tasques/Tasques/vehicle')
 const ProgramadorTasModule = require('./Programador Tasques/ProgramadorTasques')
-let AutoritzacioTasca = new TasquesModule.Tasca(new AutoritzacioModule.Autoritzacio());
-let AutenticacioTasca = new TasquesModule.Tasca(new AutenticacioModule.Autenticacio());
+const MollapModule = require('./Mollap')
+
 let vehicleTarget = new TasquesModule.Target(new vehicleModule.Vehicle());
 /**
          * Configuració del programador de tasques
@@ -17,6 +17,8 @@ let ProgramadorTasques = new ProgramadorTasModule.programadorTasques(vehicleTarg
          * Afegir al sistema les tasques que volem que el sistema
          * executi al rebre la petició del client.
          */
+let AutoritzacioTasca = new TasquesModule.Tasca(new AutoritzacioModule.Autoritzacio());
+let AutenticacioTasca = new TasquesModule.Tasca(new AutenticacioModule.Autenticacio());
 ProgramadorTasques.setTasca(AutenticacioTasca);
 ProgramadorTasques.setTasca(AutoritzacioTasca);
 /**Peticion de prueba */
