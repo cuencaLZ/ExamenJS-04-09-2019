@@ -7,7 +7,6 @@ programadorTasques.prototype = {
     constructor: programadorTasques,
     setTasca: function(tasca){
         this.lista.push(tasca);
-        console.log(this.lista);
     },
     enviarPeticio: function(persona){
         for (let i in this.lista) {

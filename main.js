@@ -5,8 +5,19 @@ const vehicleModule = require('./Programador Tasques/Tasques/vehicle')
 const ProgramadorTasModule = require('./Programador Tasques/ProgramadorTasques')
 let AutoritzacioTasca = new TasquesModule.Tasca(new AutoritzacioModule.Autoritzacio());
 let AutenticacioTasca = new TasquesModule.Tasca(new AutenticacioModule.Autenticacio());
-
-let ProgramadorTasques = new ProgramadorTasModule.programadorTasques(vehicleModule.Vehicle);
+let vehicleTarget = new TasquesModule.Target(new vehicleModule.Vehicle());
+/**
+         * Configuració del programador de tasques
+         * del sistema amb el tipus de target triat:
+         * des de vehicles a qualsevol cosa que admiteix
+         * la recepció d'un missatge.
+         */
+let ProgramadorTasques = new ProgramadorTasModule.programadorTasques(vehicleTarget);
+/**
+         * Afegir al sistema les tasques que volem que el sistema
+         * executi al rebre la petició del client.
+         */
 ProgramadorTasques.setTasca(AutenticacioTasca);
 ProgramadorTasques.setTasca(AutoritzacioTasca);
+/**Peticion de prueba */
 ProgramadorTasques.enviarPeticio("lazaro")
