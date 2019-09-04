@@ -1,3 +1,4 @@
+//Ulizamos una modulación del proyecto
 const AutenticacioModule = require('./Programador Tasques/Tasques/Autenticacio')
 const AutoritzacioModule = require('./Programador Tasques/Tasques/Autorizacio')
 const TasquesModule = require('./Programador Tasques/Tasques')

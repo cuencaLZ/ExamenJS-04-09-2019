@@ -8,7 +8,7 @@ programadorTasques.prototype = {
     setTasca: function (tasca) {
         this.lista.push(tasca);
     },
-    enviarPeticio: function (persona) {
+    executarTasques: function (persona) {
         for (let i in this.lista) {
             this.lista[i].execucio(persona);
         }

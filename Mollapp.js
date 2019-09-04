@@ -8,7 +8,7 @@ Mollapp.prototype = {
         funcion = programadordetasques;
     },
     enviarPeticio: function (persona) {
-        funcion.enviarPeticio(persona);
+        funcion.executarTasques(persona);
     },
 
 };
